@@ -3,6 +3,7 @@ name: Access Azure Blob from Colab
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   access-blob:
@@ -39,3 +40,9 @@ jobs:
         AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}
       run: |
         jupyter nbconvert --to notebook --execute --inplace --allow-errors Capstone/predict_testing_secret.ipynb
+    - name: Upload Executed Notebook
+      uses: actions/upload-artifact@v3
+      with:
+        name: executed-notebook
+        path: Capstone/predict_testing_secret.ipynb
+
