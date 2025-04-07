@@ -37,6 +37,3 @@ The GitHub workflow will:
 - Install dependencies
 - Inject secure Azure secrets
 - Execute the notebook
-- Upload the results as an artifact (you can download it)
-
-✅ No local setup needed. You don’t need Azure credentials on your machine.
