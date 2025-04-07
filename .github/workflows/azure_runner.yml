@@ -22,16 +22,20 @@ jobs:
         pip install -r requirements.txt
         pip install jupyter nbconvert
 
+    - name: Verify Jupyter Installation
+      run: |
+        jupyter --version
+
     - name: Debugging Environment Variables
       run: |
         echo "AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}"
         echo "AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}"
         echo "AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}"
 
-    - name: Run Colab Notebook
+    - name: Run Colab Notebook with Debugging
       env:
         AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
         AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
         AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}
       run: |
-        jupyter nbconvert --to notebook --execute --inplace predict_testing_secret.ipynb
+        jupyter nbconvert --to notebook --execute --inplace --debug --allow-errors predict_testing_secret.ipynb
