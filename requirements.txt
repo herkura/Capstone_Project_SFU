@@ -1,6 +1,6 @@
+azure-storage-blob
+pandas
+plotly
 numpy
 scipy
-plotly
-pandas
-azure-storage-blob
-sklearn
+scikit-learn
