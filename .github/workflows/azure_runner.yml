@@ -20,7 +20,13 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install -r requirements.txt
-        pip install nbconvert
+        pip install jupyter nbconvert
+
+    - name: Debugging Environment Variables
+      run: |
+        echo "AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}"
+        echo "AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}"
+        echo "AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}"
 
     - name: Run Colab Notebook
       env:
