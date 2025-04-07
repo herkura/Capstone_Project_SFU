@@ -41,7 +41,7 @@ jobs:
       run: |
         jupyter nbconvert --to notebook --execute --inplace --allow-errors Capstone/predict_testing_secret.ipynb
     - name: Upload Executed Notebook
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: executed-notebook
         path: Capstone/predict_testing_secret.ipynb
