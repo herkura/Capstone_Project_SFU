@@ -28,4 +28,4 @@ jobs:
         AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
         AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}
       run: |
-        jupyter nbconvert --to notebook --execute --inplace your_notebook_name.ipynb
+        jupyter nbconvert --to notebook --execute --inplace predict_testing_secret.ipynb
