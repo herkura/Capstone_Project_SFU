@@ -22,7 +22,7 @@ The project report is availaibe at Capstone/Report/.
 <img width="418" alt="Screenshot 2025-04-07 at 1 28 10 PM" src="https://media.github.sfu.ca/user/2178/files/202da918-e5ba-4f87-8f40-af45eae887f3">
 
 ## Environment Setup
-## 🔐 Testing With GitHub Actions (Secure)
+## Testing With GitHub Actions (Secure)
 
 This project is designed to access Azure Blob Storage **securely** via GitHub Actions.
 
