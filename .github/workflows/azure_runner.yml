@@ -1,0 +1,29 @@
+name: Access Azure Blob from Colab
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  access-blob:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+
+    - name: Access Azure Blob Storage
+      env:
+        AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+        AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+        AZURE_CONTAINER_NAME: ${{ secrets.AZURE_CONTAINER_NAME }}
+      run: |
+        python azure_config.py
