@@ -13,7 +13,18 @@ In this research, the authors explore the use of Support Vector Machines (SVM), 
 <img width="955" alt="Screenshot 2025-04-07 at 5 36 55 AM" src="https://media.github.sfu.ca/user/2178/files/c52e8231-3a57-43ee-90c2-c27cad0a538f"/>
 
 ## Data Product
-### Here is a snapshot of the Power BI dashboard: <img width="1710" src="https://media.github.sfu.ca/user/2178/files/c6fbcc2d-b9f9-41dc-ad69-465177d91f37">
+### Here is a snapshot of the Power BI dashboard: <img width="1710" alt="Screenshot 2025-04-08 at 1 03 56 PM" src="https://media.github.sfu.ca/user/2178/files/660a1434-f4a0-4f8e-80b3-2cd769cc8604">
+
+<img width="1710" alt="Screenshot 2025-04-08 at 1 04 05 PM" src="https://media.github.sfu.ca/user/2178/files/9bb81539-9fbc-4057-9de4-bb384f359c00">
+
+<img width="1710" alt="Screenshot 2025-04-08 at 1 04 15 PM" src="https://media.github.sfu.ca/user/2178/files/62a344f8-7b34-424d-912c-85c442be2145">
+
+
+
+
+https://media.github.sfu.ca/user/2178/files/6d6d6731-b041-46a4-88a9-e361b9f62d73
+
+
 
 ## Report
 The project report is availaibe at Capstone/Report/. 
@@ -21,19 +32,3 @@ The project report is availaibe at Capstone/Report/.
 ## Project Structure
 <img width="418" alt="Screenshot 2025-04-07 at 1 28 10 PM" src="https://media.github.sfu.ca/user/2178/files/202da918-e5ba-4f87-8f40-af45eae887f3">
 
-## Environment Setup
-## Testing With GitHub Actions (Secure)
-
-This project is designed to access Azure Blob Storage **securely** via GitHub Actions.
-
-If you'd like to test the notebook using built-in credentials (no setup required):
-
-1. **Fork this repo**
-2. Go to the **Actions** tab
-3. Select the workflow: `Access Azure Blob from Colab`
-4. Click **"Run workflow"** (you’ll see this if `workflow_dispatch` is enabled)
-
-The GitHub workflow will:
-- Install dependencies
-- Inject secure Azure secrets
-- Execute the notebook
