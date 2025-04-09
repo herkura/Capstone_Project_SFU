@@ -20,12 +20,6 @@ In this research, the authors explore the use of Support Vector Machines (SVM), 
 <img width="1710" alt="Screenshot 2025-04-08 at 1 04 15 PM" src="https://media.github.sfu.ca/user/2178/files/62a344f8-7b34-424d-912c-85c442be2145">
 
 
-
-
-https://media.github.sfu.ca/user/2178/files/6d6d6731-b041-46a4-88a9-e361b9f62d73
-
-
-
 ## Report
 The project report is availaibe at Capstone/Report/. 
 
